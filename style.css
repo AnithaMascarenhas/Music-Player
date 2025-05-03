@@ -1,0 +1,74 @@
+body {
+    background: #1e1e2f;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .player {
+    text-align: center;
+    background: #2a2a40;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00f2fe;
+    width: 300px;
+  }
+  
+  .cover {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .cover:hover {
+    transform: scale(1.05);
+  }
+  
+  .controls {
+    margin: 15px 0;
+  }
+  
+  .controls button {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    margin: 0 8px;
+    color: #00f2fe;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .controls button:hover {
+    transform: scale(1.2);
+  }
+  
+  .playlist {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    background: #1c1c2b;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .playlist div {
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+    transition: background 0.3s ease;
+  }
+  
+  .playlist div:hover {
+    background: #333;
+  }
+  
+  .playlist .active {
+    background: #00f2fe33;
+  }
+  

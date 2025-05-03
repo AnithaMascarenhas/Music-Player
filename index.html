@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <img src="covers/cover1.jpg" class="cover" id="cover" alt="Album Art">
+    <h2 id="title">Song Title</h2>
+    <h3 id="artist">Artist Name</h3>
+
+    <audio id="audio" src="songs/song1.mp3"></audio>
+
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭</button>
+      <button id="shuffle">🔀</button>
+      <button id="repeat">🔁</button>
+    </div>
+
+    <div class="playlist" id="playlist"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
